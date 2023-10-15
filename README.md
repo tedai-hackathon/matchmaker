@@ -74,7 +74,3 @@ MIT
 - Maren Eilers-Baetu - maren@baetu.de
 
 Feel free to report issues and contribute to the project!
-
----
-
-Hope this helps you out. Need more details? Just ask.
