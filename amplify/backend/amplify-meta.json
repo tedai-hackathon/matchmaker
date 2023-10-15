@@ -1,0 +1,110 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-vettyapp-prg-184435-authRole",
+      "UnauthRoleArn": "arn:aws:iam::526570204767:role/amplify-vettyapp-prg-184435-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::526570204767:role/amplify-vettyapp-prg-184435-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-vettyapp-prg-184435-deployment",
+      "UnauthRoleName": "amplify-vettyapp-prg-184435-unauthRole",
+      "StackName": "amplify-vettyapp-prg-184435",
+      "StackId": "arn:aws:cloudformation:eu-central-1:526570204767:stack/amplify-vettyapp-prg-184435/b92d4c10-6ac1-11ee-a5f4-02f208ff3a25",
+      "AmplifyAppId": "d924xdw6apmyz"
+    }
+  },
+  "api": {
+    "VettyAppDataAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "vettyapp77ec3749"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ],
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authvettyapp77ec3749"
+            }
+          }
+        },
+        "GraphQLAPIIdOutput": "p5z6jx6otfblxiik4a3htchgpq",
+        "GraphQLAPIEndpointOutput": "https://ha7qcoa4l5gfxjvd4gr3ujwzga.appsync-api.eu-central-1.amazonaws.com/graphql"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2023-10-14T20:08:57.160Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-vettyapp-prg-184435-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiVettyAppDataAPI"
+      }
+    }
+  },
+  "auth": {
+    "vettyapp77ec3749": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "eu-central-1_KIkt7Rlt9",
+        "AppClientIDWeb": "2lqhe2abm82g8afq0pgvp6m20v",
+        "AppClientID": "5vg6tj73i88ruth68n9fveciro",
+        "IdentityPoolId": "eu-central-1:5d15c661-c256-421f-b213-13898c42e0b0",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-central-1:526570204767:userpool/eu-central-1_KIkt7Rlt9",
+        "IdentityPoolName": "vettyapp77ec3749_identitypool_77ec3749__prg",
+        "UserPoolName": "vettyapp77ec3749_userpool_77ec3749"
+      },
+      "lastPushTimeStamp": "2023-10-14T20:08:57.172Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-vettyapp-prg-184435-deployment/amplify-cfn-templates/auth/vettyapp77ec3749-cloudformation-template.json",
+        "logicalId": "authvettyapp77ec3749"
+      }
+    }
+  },
+  "storage": {
+    "vettys3": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "output": {
+        "BucketName": "vettyapp-recordings184435-prg",
+        "Region": "eu-central-1"
+      },
+      "lastPushTimeStamp": "2023-10-14T20:09:10.910Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-vettyapp-prg-184435-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storagevettys3"
+      }
+    }
+  }
+}
