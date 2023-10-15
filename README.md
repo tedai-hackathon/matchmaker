@@ -1,6 +1,11 @@
 # ShipForGood
 ![image](https://github.com/tedai-hackathon/matchmaker/assets/12798472/46fd2263-8a64-434b-9508-7ed0048fd91b)
 
+# give it a try
+Test it on shipforgood@biz-companions.com
+User: tedai2023@biz-companions.com
+Pwd: JustGiveIt1+Try
+
 ## Overview
 
 ShipForGood is a cloud-native Supply Chain Platform designed to revolutionize humanitarian logistics. The platform enables Humanitarian Organizations to discover discounted shipping rates weeks in advance by utilizing empty container capacities. This is a win-win for both carriers and aid organizations, optimizing costs and reducing waste.
