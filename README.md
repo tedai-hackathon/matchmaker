@@ -1,4 +1,5 @@
 # ShipForGood
+![image](https://github.com/tedai-hackathon/matchmaker/assets/12798472/46fd2263-8a64-434b-9508-7ed0048fd91b)
 
 ## Overview
 
