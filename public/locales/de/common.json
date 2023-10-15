@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "user-profile": {
+      "menu": {
+        "profile": "Profil",
+        "settings": "Einstellungen",
+        "signout": "Abmelden"
+      }
+    }
+  },
+  "common": {}
+}

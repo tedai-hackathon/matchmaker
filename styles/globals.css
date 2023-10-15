@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+body, html {
+  min-height: 100%;
+}
+
+/* Replace '.table-container' with a suitable class name */
+.table-container {
+  /* Set the desired height for the table body to enable scrolling */
+  max-height: 50rem; /* Adjust this value based on your requirements */
+  overflow-y: auto; /* Enable vertical scrolling for the table body */
+}
+
+/* Optional: Adjust the styles for the table cells (td and th) for proper alignment and spacing */
+/* You can customize these styles based on your design requirements */
+td,
+th {
+  /* Set padding and alignment for the cells */
+  padding: 0.75rem 1rem;
+  text-align: left;
+  /* Add a border-bottom to separate table rows */
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+  width: 10px;  /* Width of the vertical scrollbar */
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background-color: transparent;  /* Color of the track (or "trough") */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #8888882c;  /* Color of the scrollbar handle */
+  border-radius: 5px;  /* Makes the handle rounded */
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #5555552c;  /* Color of the handle when hovered */
+}

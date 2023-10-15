@@ -1,0 +1,42 @@
+{
+    "navbar": {
+        "user-profile": {
+            "menu": {
+            "profile": "Profile",
+            "settings": "Settings",
+            "signout": "SignOut"
+            }
+        }
+    },
+    "common":{
+        "login": "Login",
+        "signup": "Signup",
+        "email": "Email",
+        "password": "Password",
+        "confirm-password": "Confirm Password",
+        "forgot-password": "Forgot Password",
+        "reset-password": "Reset Password",
+        "send-reset-password-link": "Send Reset Password Link",
+        "remember-me": "Remember Me",
+        "name": "Name",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "close": "Close",
+        "back": "Back",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "update": "Update",
+        "create": "Create",
+        "search": "Search",
+        "actions": "Actions",
+        "no-data": "No Data",
+        "no-results": "No Results",
+        "no-matches": "No Matches",
+        "no-records": "No Records",
+        "loading": "Loading",
+        "processing": "Processing",
+        "server-error": "Server Error",
+        "server-error-message": "Something went wrong, please try again later."
+    }
+}
